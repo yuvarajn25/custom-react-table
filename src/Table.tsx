@@ -13,6 +13,7 @@ import { TableSortLabel } from '@material-ui/core';
 import ColumnList from './components/ColumnList';
 import Styles from './styles';
 import Pagination from './components/Pagination';
+import Filters from './components/Filters/Filters';
 
 export interface Props {
   columns: any[];
@@ -162,6 +163,7 @@ export function Table({
       <div>
         <div className="action-btn-container">
           <ColumnList columns={allColumns} setColumnOrder={setColumnOrder} />
+          <Filters columns={allColumns} />
         </div>
         <div {...getTableProps()} className="table">
           <div>

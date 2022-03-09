@@ -84,6 +84,34 @@ const Styles = styled.div`
     width: 18px;
     height: 18px;
   }
+
+  .filters-list {
+    visibility: hidden;
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+    z-index: 1;
+    margin-top: 25px;
+    margin-left: 0px;
+    transition: transform 2s;
+  }
+  .filters-list > div {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+  .filters-list > div > select {
+    height: 25px;
+    padding: 10px;
+    margin: 10px;
+  }
+  .filters-list > div > input {
+    height: 22px;
+  }
+
   .action-btn > button {
     width: 100%;
     height: 100%;
