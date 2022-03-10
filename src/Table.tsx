@@ -163,7 +163,7 @@ export function Table({
       <div>
         <div className="action-btn-container">
           <ColumnList columns={allColumns} setColumnOrder={setColumnOrder} />
-          <Filters columns={allColumns} />
+          {/* <Filters columns={allColumns} /> */}
         </div>
         <div {...getTableProps()} className="table">
           <div>
